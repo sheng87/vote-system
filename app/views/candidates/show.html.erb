@@ -1,0 +1,17 @@
+<% if @candidate %>
+
+    <h1> <%= @candidate.name %> </h1>
+
+    <ul>
+        <li>party <%= @candidate.party %> </li>
+        <li>age <%= @candidate.age %> </li>
+        <li>policy <%= @candidate.policy %></li>
+        
+    </ul>
+
+<% else %>
+<h1>No Record Found! </h1>
+
+<% end %>
+
+<div> </div>

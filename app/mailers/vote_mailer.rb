@@ -1,0 +1,3 @@
+class VoteMailer < ApplicationMailer
+    
+end

@@ -1,0 +1,38 @@
+<% if candidate.errors.any? %>
+    <ul>
+        <% candidate.errors.full_messages.each do 
+            |messages| %>
+            <li><%= messages %></li>
+        <% end %>
+    </ul>
+<% end %>
+
+
+<%= form_for (candidate) do |form| %>
+
+<div> 
+    <%= form.text_field:name %>
+    <%= form.label :name %>
+</div>
+
+<div> 
+    <%= form.text_field :party %>
+    <%= form.label :party %>
+</div>
+
+
+<div>
+    <%= form.text_field :age %>
+    <%= form.label :age %>
+</div>   
+
+
+<div>
+    <%= form.text_area :policy %>
+    <%= form.label :policy %>
+</div>
+
+<%= form.submit %>
+
+
+<% end %>    
